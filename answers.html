@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Learn the basics of semantic HTML5 structure with accessibility and SEO best practices." />
+    <meta name="keywords" content="HTML5, semantic tags, accessibility, SEO, web development" />
+    <meta name="author" content="Levvel" />
+    <title>Semantic HTML5 Example</title>
+</head>
+<body>
+
+    <header role="banner">
+        <h1>Welcome to Semantic HTML5</h1>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#about" accesskey="a">About</a></li>
+                <li><a href="#features" accesskey="f">Features</a></li>
+                <li><a href="#contact" accesskey="c">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main">
+        <section id="about">
+            <h2>About This Page</h2>
+            <p>This page demonstrates a semantic HTML5 layout with accessibility and SEO enhancements.</p>
+        </section>
+
+        <section id="features">
+            <h2>Key Features</h2>
+            <article>
+                <h3>Semantic Structure</h3>
+                <p>Using elements like <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, and <code>&lt;footer&gt;</code> improves readability and SEO.</p>
+            </article>
+            <article>
+                <h3>Accessibility</h3>
+                <p>ARIA roles, alt text, and access keys help users with assistive technologies navigate the site.</p>
+            </article>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form aria-label="Contact form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required aria-required="true" />
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required aria-required="true" />
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <p>&copy; 2024 Semantic Web Co. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
